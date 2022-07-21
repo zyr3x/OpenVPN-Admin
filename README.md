@@ -3,9 +3,6 @@
 ## Summary
 Administrate its OpenVPN with a web interface (logs visualisations, users managing...) and a SQL database.
 
-![Previsualisation configuration](https://lutim.cpy.re/fUq2rxqz)
-![Previsualisation administration](https://lutim.cpy.re/wwYMkHcM)
-
 
 ## Prerequisite
 
@@ -40,6 +37,15 @@ In order to install `npm`, [stretch-backports need to be added to your sources.l
 # npm install -g bower
 ````
 
+
+### Ubuntu 20.04
+
+````
+# apt-get install openvpn apache2 php-mysql mysql-server php-zip php unzip git wget sed curl iptables net-tools npm nodejs
+# npm install -g bower
+````
+
+
 ### CentOS 7
 
 ````
@@ -61,7 +67,7 @@ Only tested on Debian Jessie. Feel free to open issues.
   * Setup OpenVPN and the web application:
 
         $ cd ~/my_coding_workspace
-        $ git clone https://github.com/Chocobozzz/OpenVPN-Admin openvpn-admin
+        $ git clone https://github.com/zyr3x/OpenVPN-Admin openvpn-admin
         $ cd openvpn-admin
         # ./install.sh /var/www www-data www-data
 
